@@ -1,3 +1,3 @@
-# slot-machine
+# slot-machine2
 
-A slot machine implemented in pure CSS and HTML.
+A slot machine implemented in JS, CSS and HTML.
