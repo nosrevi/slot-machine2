@@ -1,8 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html,
 body {
@@ -23,6 +24,7 @@ body {
   background: rgba(0, 0, 0, 0.8);
   z-index: 999;
   -webkit-transition: opacity 0.6s;
+     -moz-transition: opacity 0.6s;
           transition: opacity 0.6s;
 }
 .window h1,
@@ -61,10 +63,11 @@ body {
   line-height: 40px;
   cursor: pointer;
   border-bottom: 4px solid #f0e68c;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -79,7 +82,9 @@ body {
   display: block;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
   background-color: #ff0000;
   background-image: radial-gradient(circle at 33px 13px,#fff 18%,rgba(255,255,255,0) 5%);
 }
@@ -93,7 +98,9 @@ body {
   height: 100px;
   background-color: #fff;
   border-left: solid #a9a9a9;
-  transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+     -moz-transform: rotate(-15deg);
+          transform: rotate(-15deg);
 }
 
 #end {
@@ -124,11 +131,14 @@ body {
   width: 1200px;
   height: 600px;
   background-color: #daa520;
-  border-radius: 20px;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
   -webkit-transform: perspective(600px) rotateX(45deg);
+     -moz-transform: perspective(600px) rotateX(45deg);
           transform: perspective(600px) rotateX(45deg);
   -webkit-transform-origin: center bottom;
-      -ms-transform-origin: center bottom;
+     -moz-transform-origin: center bottom;
           transform-origin: center bottom;
 }
 #cup {
@@ -151,7 +161,9 @@ body {
   left: -16px;
   width: 57px;
   height: 38px;
-  border-radius: 44%;
+  -webkit-border-radius: 44%;
+     -moz-border-radius: 44%;
+          border-radius: 44%;
   background-image: radial-gradient(circle at 15px 18px, rgba(255,255,255,0) 18%, white 5%);
 }
 #cup:after{
@@ -173,8 +185,11 @@ body {
   left: 150px;
   border: solid #fff4b5 20px;
   background-color: #fff8dc;
-  border-radius: 15px 15px 0 0;
-  transform: translateZ(250px);
+  -webkit-border-radius: 15px 15px 0 0;
+     -moz-border-radius: 15px 15px 0 0;
+          border-radius: 15px 15px 0 0;
+  -webkit-transform: translateZ(250px);
+          transform: translateZ(250px);
   position: absolute;
 }
 #panel {
@@ -185,12 +200,17 @@ body {
   border: solid #fff4b5;
   border-width: 100px 20px;
   background-color: #fff8dc;
-  border-radius: 15px 15px 0 0;
-  transform: perspective(600px) rotateX(31deg);
+  -webkit-border-radius: 15px 15px 0 0;
+     -moz-border-radius: 15px 15px 0 0;
+          border-radius: 15px 15px 0 0;
+  -webkit-transform: perspective(600px) rotateX(31deg);
+          transform: perspective(600px) rotateX(31deg);
   position: absolute;
 }
 .viewport {
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
   position: relative;
   overflow: hidden;
   width: 440px;
@@ -209,7 +229,6 @@ body {
       float: left;
       -webkit-transform-style: preserve-3d;
          -moz-transform-style: preserve-3d;
-           -o-transform-style: preserve-3d;
               transform-style: preserve-3d;
     }
     .reel.reel-margin {
@@ -220,7 +239,9 @@ body {
       position: absolute;
       width: 140px;
       height: 150px;
-      border-radius: 15px;
+      -webkit-border-radius: 15px;
+         -moz-border-radius: 15px;
+              border-radius: 15px;
       line-height: 136px;
       font-weight: bold;
       color: #fff;
@@ -239,54 +260,45 @@ body {
     .reel figure:nth-child(1) {
       -webkit-transform: rotateX(   0deg ) translateZ( 206px );
          -moz-transform: rotateX(   0deg ) translateZ( 206px );
-           -o-transform: rotateX(   0deg ) translateZ( 206px );
               transform: rotateX(   0deg ) translateZ( 206px );
     }
     .reel figure:nth-child(2) {
       -webkit-transform: rotateX(  40deg ) translateZ( 206px );
          -moz-transform: rotateX(  40deg ) translateZ( 206px );
-           -o-transform: rotateX(  40deg ) translateZ( 206px );
               transform: rotateX(  40deg ) translateZ( 206px );
     }
     .reel figure:nth-child(3) {
       -webkit-transform: rotateX(  80deg ) translateZ( 206px );
          -moz-transform: rotateX(  80deg ) translateZ( 206px );
-           -o-transform: rotateX(  80deg ) translateZ( 206px );
               transform: rotateX(  80deg ) translateZ( 206px );
     }
     .reel figure:nth-child(4) {
       -webkit-transform: rotateX( 120deg ) translateZ( 206px );
          -moz-transform: rotateX( 120deg ) translateZ( 206px );
-           -o-transform: rotateX( 120deg ) translateZ( 206px );
               transform: rotateX( 120deg ) translateZ( 206px );
     }
     .reel figure:nth-child(5) {
       -webkit-transform: rotateX( 160deg ) translateZ( 206px );
          -moz-transform: rotateX( 160deg ) translateZ( 206px );
-           -o-transform: rotateX( 160deg ) translateZ( 206px );
               transform: rotateX( 160deg ) translateZ( 206px );
     }
     .reel figure:nth-child(6) {
       -webkit-transform: rotateX( 200deg ) translateZ( 206px );
          -moz-transform: rotateX( 200deg ) translateZ( 206px );
-           -o-transform: rotateX( 200deg ) translateZ( 206px );
               transform: rotateX( 200deg ) translateZ( 206px );
     }
     .reel figure:nth-child(7) {
       -webkit-transform: rotateX( 240deg ) translateZ( 206px );
          -moz-transform: rotateX( 240deg ) translateZ( 206px );
-           -o-transform: rotateX( 240deg ) translateZ( 206px );
               transform: rotateX( 240deg ) translateZ( 206px );
     }
     .reel figure:nth-child(8) {
       -webkit-transform: rotateX( 280deg ) translateZ( 206px );
          -moz-transform: rotateX( 280deg ) translateZ( 206px );
-           -o-transform: rotateX( 280deg ) translateZ( 206px );
               transform: rotateX( 280deg ) translateZ( 206px );
     }
     .reel figure:nth-child(9) {
       -webkit-transform: rotateX( 320deg ) translateZ( 206px );
          -moz-transform: rotateX( 320deg ) translateZ( 206px );
-           -o-transform: rotateX( 320deg ) translateZ( 206px );
               transform: rotateX( 320deg ) translateZ( 206px );
     }
