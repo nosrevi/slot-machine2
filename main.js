@@ -7,11 +7,12 @@ var Reel = function(index, options) {
   var elmId = '#reel'+this.id;
   var that = this;
   var htmlString = '';
-  
+
   for (var i=0; i < options.length; ++i) {
     htmlString += '<figure class="' + options[i].replace(/\s/, '-') +'">' + options[i] + '</figure>';
   }
-  $(elmId).html(htmlString.repeat(3));
+  htmlString += htmlString + htmlString;
+  $(elmId).html(htmlString);
   this.spin = function() {
     $({deg: 0}).animate({deg: 40 * this.result + 360 * this.rounds}, {
       duration: 8000,
